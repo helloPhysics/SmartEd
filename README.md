@@ -1,2 +1,3 @@
-# SmartEd
-This is an EdTech designed by the Hello Physics team
+# EdTech Project
+
+A simple EdTech platform built with HTML, CSS, and JavaScript.

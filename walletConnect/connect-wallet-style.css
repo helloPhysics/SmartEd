@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use Inter font as the default */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color:#090d35; /* bg-gray-900 */
+    color: #f9fafb; /* text-gray-50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* The main container card */
+.card {
+    text-align: center;
+    background-color: #1f2937; /* bg-gray-800 */
+    padding: 2rem;
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /* shadow-2xl */
+    max-width: 24rem; /* max-w-sm */
+    width: 100%;
+}
+
+.card img {
+    width: 6rem; /* w-24 */
+    height: 6rem; /* h-24 */
+    margin: 0 auto 1.5rem auto; /* mx-auto mb-6 */
+}
+
+.card h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #ffffff; /* text-white */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.card p {
+    color: #9ca3af; /* text-gray-400 */
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+/* The main button that handles the connection */
+#connectButton {
+    width: 100%;
+    background-color: #2563eb; /* bg-blue-600 */
+    color: #ffffff;
+    font-weight: 700; /* font-bold */
+    padding: 0.75rem 1.5rem; /* py-3 px-6 */
+    border: none;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#connectButton:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+    transform: scale(1.05);
+}
+
+#connectButton:focus {
+     outline: 2px solid transparent;
+     outline-offset: 2px;
+     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-4 focus:ring-blue-500/50 */
+}
+
+#connectButton:disabled {
+    background-color: #16a34a; /* bg-green-600 */
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Wallet Info Section */
+#wallet-info {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+#wallet-info p {
+    color: #d1d5db; /* text-gray-300 */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+}
+
+#wallet-info .status-text {
+    color: #4ade80; /* text-green-400 */
+}
+
+#wallet-info .address-text {
+    font-family: monospace;
+    font-size: 0.875rem; /* text-sm */
+    color: #60a5fa; /* text-blue-400 */
+}
+
+/* Modal for MetaMask Installation */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #1f2937; /* bg-gray-800 */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    margin-bottom: 1.5rem;
+}
+
+.modal-content a {
+    background-color: #f97316; /* bg-orange-500 */
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.modal-content a:hover {
+    background-color: #ea580c; /* hover:bg-orange-600 */
+}
+
+.modal-content button {
+    margin-left: 1rem;
+    color: #9ca3af; /* text-gray-400 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-content button:hover {
+    color: white;
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none;
+}

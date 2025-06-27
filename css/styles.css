@@ -1,0 +1,535 @@
+/* Basic Reset and Font */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for Centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 2px;
+  height: 2px;
+  color: #e65c00;
+}
+
+.main-logo {
+  height: 30px;
+  margin-left: -40px;
+  align-items: center;
+}
+
+.nav-links {
+  display: inline-flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e65c00;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.smart {
+  color: #e65c00;
+}
+.hero-section h1 {
+  font-size: 3em;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hero-image-wrapper {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image-caption {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 10px;
+}
+
+.get-started-btn {
+  background-color: #ff6600; /* Orange */
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* For when it's an anchor tag */
+  display: inline-block; /* To allow padding/margin */
+  margin-top: 20px;
+}
+
+.get-started-btn > a {
+  color: #f0f2f5;
+  text-decoration: none;
+  color: #f0f2f5;
+  
+}
+
+.get-started-btn:hover {
+  background-color: #e65c00; /* Darker orange */
+  transform: translateY(-2px);
+}
+
+/* Why Learn Section */
+.why-learn-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f0f2f5; /* Light grey background */
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.why-learn-section h2 {
+  font-size: 2.5em;
+  color: #222;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.feature-item {
+  flex-basis: calc(50% - 40px); /* Two columns, considering gap */
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  font-size: 2em;
+  color: #007bff; /* Blue for icons */
+  margin-right: 15px;
+}
+
+.feature-text p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Recommended Curriculum */
+.recommended-curriculum {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.recommended-curriculum h2 {
+  font-size: 2.2em;
+  color: #222;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.recommended-curriculum a {
+  color: #f0f2f5;
+  text-decoration: none;
+  color: #f0f2f5;
+  
+}
+
+.course-card {
+  background-color: #222; /* Dark background for the course card */
+  color: white;
+  padding: 25px 40px;
+  border-radius: 10px;
+  display: inline-block; /* Allows text-align center on parent */
+  font-size: 1.4em;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  background-color: #333;
+}
+
+/* Course Page Specific Styles */
+.course-header-section {
+  text-align: center;
+  padding: 6px 20px 30px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-header-section h1 {
+  font-size: 2.8em;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.course-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+}
+
+.course-topics-section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #f0f2f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-topics-section h2 {
+  font-size: 2.5em;
+  color: #222;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.topics-grid {
+  display: flex;
+  flex-direction: column; /* Stack topic cards vertically */
+  gap: 20px;
+  align-items: center; /* Center cards horizontally */
+}
+
+/* New styles for dropdown */
+.topic-dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Match topic-card width */
+  text-align: center; /* Align content inside dropdown */
+}
+
+.topic-dropdown-btn {
+  width: 100%;
+  background-color: #222; /* Dark background */
+  color: white;
+  padding: 20px 40px; /* Match course-card padding */
+  font-size: 1.4em; /* Match course-card font-size */
+  font-weight: 600; /* Match course-card font-weight */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Match course-card shadow */
+  cursor: pointer;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.topic-dropdown-btn:hover {
+  background-color: #333; /* Darker background on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.dropdown-arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow: hidden; /* Ensures rounded corners on children */
+}
+
+.dropdown-content a {
+  color: #444;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-bottom: 1px solid #eee; /* Separator for items */
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+  color: #007bff;
+}
+
+/* Existing topic-card style for other topics (if any) */
+.topic-card {
+  max-width: 600px; /* Limit width for readability */
+  background-color: #222; /* Dark background */
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-3px);
+  background-color: #333;
+}
+
+.quiz-section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px; /* Add margin at the bottom */
+}
+
+.quiz-card {
+  background-color: #222; /* Dark background */
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-flex; /* Use flex to align icon and text */
+  align-items: center;
+  gap: 15px;
+  font-size: 1.4em;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-card:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.quiz-icon {
+  background-color: #ff0000; /* red background for quiz text */
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.8em; /* Smaller font for "Quiz" text */
+  font-weight: bold;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #333;
+  color: #eee;
+  margin-top: 50px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section h1,
+  .course-header-section h1 {
+    font-size: 2.2em;
+  }
+
+  .feature-item {
+    flex-basis: 90%; /* Single column on small screens */
+    max-width: none;
+  }
+
+  .course-description {
+    font-size: 1em;
+  }
+
+  .course-topics-section h2 {
+    font-size: 2em;
+  }
+
+  .topic-card,
+  .topic-dropdown-btn,
+  .dropdown-content a,
+  .quiz-card {
+    font-size: 1.1em;
+    padding: 15px 20px;
+  }
+
+  .quiz-icon {
+    padding: 6px 12px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1,
+  .course-header-section h1 {
+    font-size: 1.8em;
+  }
+
+  .get-started-btn {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .why-learn-section h2,
+  .course-topics-section h2 {
+    font-size: 1.8em;
+  }
+
+  .feature-item {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    font-size: 1.8em;
+  }
+
+  .feature-text p {
+    font-size: 1em;
+  }
+
+  .course-card {
+    font-size: 1.2em;
+    padding: 20px 30px;
+  }
+
+  .topic-card,
+  .topic-dropdown-btn,
+  .dropdown-content a,
+  .quiz-card {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+}
+
+
+/* Content Section for about page */
+
+.smartEd-Discription {
+  text-align: left;
+  padding: 0, 10px, 20px, 40px;
+}
+
+.content-section {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px; 
+}
+
+
+.text-block, .highlight-box {
+    flex: 1; 
+    min-width: 300px; 
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-block {
+    background-color: #fff; 
+    
+}
+
+.highlight-box {
+    background-color: #FF5722; 
+    color: #fff; 
+    font-size: 1.5em;
+    font-weight: 700; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    min-height: 120px; 
+    line-height: 1.3;
+}
+

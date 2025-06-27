@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartEd.com</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="assets/fonts/helvetica-255-webfont/Helvetica-Bold.woff"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"
+            ><img
+              class="main-logo"
+              src="assets/images/Logo a.svg"
+              alt="SmartEd-Logo"
+          /></span>
+          SmartEd
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="https://drive.google.com/drive/folders/16eBB3E1c_HXYkMP9joFLQLzj0NYaYx9S">About</a>
+          <a href="#">Learning Resources</a>
+          <a target="_blank" href="walletConnect/connectWallet.html">Wallet</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <section class="course-header-section container">
+            <h1>General Physics III <br> (Vibration Waves and Optics)</h1>
+            <p class="course-description">
+                This course provides a comprehensive pathway to learning the basics of vibration,
+                waves and optics, covering topics such as types of waves, wave propagation,
+                interference, diffraction and optical phenomena. Students will gain a deep
+                understanding of the principles governing vibrations and waves, as well as the
+                behavior of light and its applications in various fields.
+            </p>
+        </section>
+
+        <section class="course-topics-section container">
+            <h2>Topics</h2>
+            <div class="topics-grid">
+
+                <!-- Dropdown for Simple Harmonic Motion -->
+                <div class="topic-dropdown">
+                    <button class="topic-dropdown-btn">
+                        Simple Harmonic Motion <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Simple Harmonic Motion</a>
+                        <a href="#">Period and Frequency</a>
+                        <a href="#">Characteristics of SHM</a>
+                        <a href="#">Equation of SHM</a>
+                    </div>
+                    <section class="quiz-section container">
+            <div class="quiz-card">
+                <span class="quiz-icon">Quiz</span> Simple Harmonic Motion
+            </div>
+        </section>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SmartEd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdownBtn = document.querySelector('.topic-dropdown-btn');
+            if (dropdownBtn) {
+                dropdownBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                        this.querySelector('.dropdown-arrow').textContent = '▼'; // Collapse icon
+                    } else {
+                        dropdownContent.style.display = "block";
+                        this.querySelector('.dropdown-arrow').textContent = '▲'; // Expand icon
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
