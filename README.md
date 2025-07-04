@@ -1,3 +1,4 @@
 # EdTech Project
 
-A simple EdTech platform built with HTML, CSS, and JavaScript.
+An Edtech built to simplify University Courses for student by making it easy to understand.
+This was built by the Hello Physics team for the Havillah Academy Hackthon.
