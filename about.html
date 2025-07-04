@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmartEd.com</title>
 
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="assets/fonts/helvetica-255-webfont/Helvetica-Bold.woff"
       rel="stylesheet"
     />
+    <style>
+      /* CSS for the Floating Action Buttons */
+      .fab-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+      }
+
+      .fab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+      }
+
+      .fab:hover {
+        transform: scale(1.1);
+      }
+
+      .fab.x {
+        background-color: #000000; /* X (Twitter) black */
+      }
+
+      .fab.youtube {
+        background-color: #ff0000; /* YouTube red */
+      }
+
+      .fab img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -26,8 +67,11 @@
         </a>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#">About</a>
-          <a target="_blank"  href="https://drive.google.com/drive/folders/16eBB3E1c_HXYkMP9joFLQLzj0NYaYx9S">Learning Resources</a>
+          <a href="about.html">About</a>
+          <a
+            href="https://drive.google.com/drive/folders/16eBB3E1c_HXYkMP9joFLQLzj0NYaYx9S"
+            >Learning Resources</a
+          >
           <a target="_blank" href="walletConnect/connectWallet.html">Wallet</a>
         </nav>
       </div>
@@ -36,7 +80,8 @@
     <main class="container">
       <section class="hero-section container">
         <h1>
-          <span class="smart"> Smart: <br> </span> Unlocking your learning potential
+          <span class="smart"> Smart: <br /> </span> Unlocking your learning
+          potential
         </h1>
         <div class="hero-image-wrapper">
           <img
@@ -54,8 +99,8 @@
             of students, the <b> Hello Physics! </b> team, came together to
             create something better. With SmartEd, learning is more engaging,
             more practical, and a lot more relatable. The content is clear,
-            interactive, and to the point, and the design makes it easy to stay
-            focused and actually enjoy learning.
+            interactive, and straight to the point, and the design makes it
+            easy to stay focused and actually enjoy learning.
           </p>
         </div>
       </section>
@@ -71,11 +116,10 @@
             real learning happens
           </p>
         </div>
-         
       </section>
       <div class="highlight-box">Where curiosity meets community</div>
       <section class="content-section reverse">
-          <div class="text-block">
+        <div class="text-block">
           <p>
             More than just lessons and quizzes, SmartEd is a space where
             students connect, ask questions, and grow together. It's built
@@ -83,7 +127,6 @@
             real conversations, peer support, and a sense of belonging.
           </p>
         </div>
-        
       </section>
 
       <section class="content-section">
@@ -105,5 +148,24 @@
         <p>&copy; 2025 SmartEd. All rights reserved.</p>
       </div>
     </footer>
+
+    <div class="fab-container">
+      <a
+        href="https://x.com/HelloPhysics_"
+        target="_blank"
+        class="fab x"
+        aria-label="Visit us on X"
+      >
+        <img src="assets/images/twitter-x-seeklogo-2.svg" alt="X Logo" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCngouuJJiDdMmC4VW_oq16g"
+        target="_blank"
+        class="fab youtube"
+        aria-label="Visit us on YouTube"
+      >
+        <img src="assets/images/Youtube Logo.svg" alt="YouTube Logo" />
+      </a>
+    </div>
   </body>
 </html>

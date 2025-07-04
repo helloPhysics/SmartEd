@@ -26,8 +26,8 @@
         </a>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="https://drive.google.com/drive/folders/16eBB3E1c_HXYkMP9joFLQLzj0NYaYx9S">About</a>
-          <a href="#">Learning Resources</a>
+          <a href="about.html">About</a>
+          <a href="https://drive.google.com/drive/folders/16eBB3E1c_HXYkMP9joFLQLzj0NYaYx9S">Learning Resources</a>
           <a target="_blank" href="walletConnect/connectWallet.html">Wallet</a>
         </nav>
       </div>
@@ -35,7 +35,7 @@
 
     <main>
         <section class="course-header-section container">
-            <h1>General Physics III <br> (Vibration Waves and Optics)</h1>
+            <h1>General Physics IV <br> (Vibration Waves and Optics)</h1>
             <p class="course-description">
                 This course provides a comprehensive pathway to learning the basics of vibration,
                 waves and optics, covering topics such as types of waves, wave propagation,
@@ -55,10 +55,10 @@
                         Simple Harmonic Motion <span class="dropdown-arrow">▼</span>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Simple Harmonic Motion</a>
-                        <a href="#">Period and Frequency</a>
-                        <a href="#">Characteristics of SHM</a>
-                        <a href="#">Equation of SHM</a>
+                        <a href="simpleHarmonicMotion.html">Simple Harmonic Motion</a>
+                        <a href="comingSoon.html">Period and Frequency</a>
+                        <a href="comingSoon.html">Characteristics of SHM</a>
+                        <a target="_top" href="comingSoon.html">Equation of SHM</a>
                     </div>
                     <section class="quiz-section container">
             <div class="quiz-card">
@@ -85,10 +85,10 @@
                     const dropdownContent = this.nextElementSibling;
                     if (dropdownContent.style.display === "block") {
                         dropdownContent.style.display = "none";
-                        this.querySelector('.dropdown-arrow').textContent = '▼'; // Collapse icon
+                        this.querySelector('.dropdown-arrow').textContent = '▼'; 
                     } else {
                         dropdownContent.style.display = "block";
-                        this.querySelector('.dropdown-arrow').textContent = '▲'; // Expand icon
+                        this.querySelector('.dropdown-arrow').textContent = '▲'; 
                     }
                 });
             }
